@@ -14,13 +14,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($conn->query($sql) === TRUE) {
         $successMessage = "Record deleted successfully";
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        echo "Error: " . $sql . "<br>" . $mysqli->error;
     }
 }
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
+    <title>Delete User</title>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

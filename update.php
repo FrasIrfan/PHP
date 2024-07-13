@@ -12,16 +12,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'];
 
     $sql = "UPDATE users SET name='$name', email='$email' WHERE ID='$id'";
-    if ($conn->query($sql) === TRUE) {
+    if ($mysqli->query($sql) === TRUE) {
         $successMessage = "Record updated successfully";
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        echo "Error: " . $sql . "<br>" . $mysqli->error;
     }
 }
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
+<title>Update User</title>
 
 <head>
     <meta charset="UTF-8">

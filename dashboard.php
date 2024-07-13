@@ -66,7 +66,6 @@ include 'config.php';
 </head>
 <body>
     <div class="sidebar">
-        <a href="#">Dashboard</a>
         <a href="create.php">Create User</a>
         <a href="read.php">Read All Users</a>
         <a href="update.php">Update User</a>
